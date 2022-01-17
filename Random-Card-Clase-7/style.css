@@ -1,0 +1,83 @@
+body{
+    background-color: green;
+}
+
+.card{
+    width: 263px;
+    height: 396px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: relative; /*para que los internos sean absolutos*/
+    padding-top: 10px;
+    font-size: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number{
+    text-align: center;
+    position: relative;   
+}
+ /*spade*/
+.spade::before{
+    content: "\2660";
+    position: absolute;
+    margin-top: -137px;
+    margin-left: -88px;
+
+}
+.spade::after{
+    content: "\2660";
+    position: absolute;
+    margin-top: 127px;
+    transform: rotate(180deg);
+}
+/*suit*/
+.suit::before{
+    content: "\2663";
+    position: absolute;
+    margin-top: -137px;
+    margin-left: -88px;
+
+}
+.suit::after{
+    content: "\2663";
+    position: absolute;
+    margin-top: 127px;
+    transform: rotate(180deg);
+}
+/*heart*/
+.heart::before{
+    content: "\2665";
+    position: absolute;
+    margin-top: -137px;
+    margin-left: -88px;
+    color: red;
+    
+
+}
+.heart::after{
+    content: "\2665";
+    position: absolute;
+    margin-top: 127px;
+    color: red;
+    transform: rotate(180deg);
+}
+/*dinamond*/
+.dinamond::before{
+    content: "\2666";
+    position: absolute;
+    margin-top: -137px;
+    margin-left: -88px;
+    color: red;
+
+}
+.dinamond::after{
+    content: "\2666";
+    position: absolute;
+    margin-top: 127px;
+    color: red;
+    transform: rotate(180deg);
+}
+
